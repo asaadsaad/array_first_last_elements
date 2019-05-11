@@ -1,0 +1,25 @@
+DELETE http://localhost:3000/clear HTTP/1.1
+
+###
+POST http://localhost:3000/fill HTTP/1.1
+content-type: application/json
+
+{   "_id" : 1, 
+    "items": [
+        {"name": "Course 1"},
+        {"name": "Course 2"},
+        {"name": "Course 3"},
+        {"name": "Course 4"},
+        {"name": "Course 5"}] 
+}
+
+
+###
+# Get all records
+GET http://localhost:3000/ HTTP/1.1
+
+###
+GET http://localhost:3000/getlast HTTP/1.1
+
+###
+GET http://localhost:3000/updatelast HTTP/1.1
